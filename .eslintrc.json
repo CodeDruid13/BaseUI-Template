@@ -5,7 +5,12 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "plugin:@typescript-eslint/recommended",
+        "react-app",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -17,8 +22,91 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "react-hooks",
+        "baseui"
     ],
     "rules": {
+        "baseui/deprecated-theme-api": "warn",
+        "baseui/deprecated-component-api": "warn",
+        "baseui/no-deep-imports": "warn",
+        "react/jsx-filename-extension": [
+            "warn",
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never",
+                "js": "never",
+                "jsx": "never"
+            }
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": [
+            "error"
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 100
+            }
+        ],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "import/prefer-default-export": "off",
+        "react/prop-types": "off",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "quotes": "off",
+        "jsx-quotes": [
+            "warn",
+            "prefer-double"
+        ],
+        "no-confusing-arrow": [
+            "warn",
+            {
+                "allowParens": true
+            }
+        ],
+        "@typescript-eslint/no-explicit-any": "off",
+        "linebreak-style": 0,
+        "comma-dangle": 0,
+        "arrow-body-style": [
+            "off"
+        ],
+        "react/jsx-props-no-spreading": "off",
+        "ObjectExpression": "off",
+        "object-curly-newline": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn"
+        ],
+        "react/require-default-props": "off",
+        "react/destructuring-assignment": "off",
+        "class-methods-use-this": "off",
+        "import/newline-after-import": [
+            "off",
+            {
+                "count": 2
+            }
+        ],
+        "operator-linebreak": "off",
+        "implicit-arrow-linebreak": "off",
+        "object-shorthand": "off",
+        "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
     }
 }

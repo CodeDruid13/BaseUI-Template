@@ -1,5 +1,5 @@
 {
-  "name": "welcomeui",
+  "name": "baseuitemplate",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,15 +8,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@welcome-ui/core": "^3.13.2",
-    "@xstyled/styled-components": "^3.1.2",
-    "@xstyled/system": "^3.1.2",
+    "@types/styletron-engine-atomic": "^1.1.1",
+    "@types/styletron-react": "^5.0.3",
+    "@types/styletron-standard": "^2.0.2",
+    "baseui": "^10.6.0",
     "formik": "^2.2.9",
     "next": "12.0.4",
     "prop-types": "^15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "styletron-engine-atomic": "^1.4.8",
+    "styletron-react": "^6.0.2"
   },
   "devDependencies": {
     "@types/node": "16.11.9",
@@ -27,6 +30,7 @@
     "eslint-config-airbnb": "^19.0.1",
     "eslint-config-next": "12.0.4",
     "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-baseui": "^10.6.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
